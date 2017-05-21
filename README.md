@@ -2,6 +2,8 @@
 
 A simple wrapper for [HipsterJesus](http://hipsterjesus.com/), a service that generates "lorem ipsum"-like text in hipster lingo.
 
+## WIP
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
