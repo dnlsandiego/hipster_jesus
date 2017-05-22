@@ -34,7 +34,8 @@ defmodule HipsterJesus.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.11.1"},
-      {:poison, "~> 3.0"}]
+      {:poison, "~> 3.0"},
+      {:ex_doc, "~> 0.14", only: :dev, runtime: false}]
   end
 
   defp description do
