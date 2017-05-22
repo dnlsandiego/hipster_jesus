@@ -7,7 +7,11 @@ defmodule HipsterJesus.Mixfile do
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     description: description(),
+     package: package(),
+     deps: deps(),
+     name: "HipsterJesus",
+     source_url: "https://github.com/dnlsandiego/hipster_jesus"]
   end
 
   # Configuration for the OTP application
@@ -31,5 +35,20 @@ defmodule HipsterJesus.Mixfile do
   defp deps do
     [{:httpoison, "~> 0.11.1"},
       {:poison, "~> 3.0"}]
+  end
+
+  defp description do
+    """
+    A simple wrapper for [HipsterJesus](http://hipsterjesus.com/), 
+    a service that generates "lorem ipsum"-like text in hipster lingo.
+    """
+  end
+
+  defp package do
+    [
+      name: :hipster_jesus,
+      maintainers: ["Daniel Sandiego"],
+      links: %{"GitHub" => "https://github.com/dnlsandiego/hipster_jesus"}
+    ]
   end
 end
