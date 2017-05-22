@@ -45,5 +45,7 @@ Fetch a hipster flavored lorem ipsum text:
 
 ## Options
 `paragraphs` - Number of paragraphs to fetch.
+
 `type` - Choice of `hipster-latin` or `hipster-centric`. The former mixes in traditional lorem ipsum text while the latter is just hipster lingo.
+
 `html` - The the text in `<p></p>` tags.
