@@ -26,10 +26,10 @@ defmodule HipsterJesus do
   end
 
   defp build_query_string(opts) do
-    paras = Keyword.get(opts, :paras, 4)
+    paragraphs = Keyword.get(opts, :paragraphs, 4)
     type = Keyword.get(opts, :type, "hipster-centric")
     html = Keyword.get(opts, :html, false)
 
-    "?paras=#{paras}&type=#{type}&html=#{html}"
+    "?paras=#{paragraphs}&type=#{type}&html=#{html}"
   end
 end
