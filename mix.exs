@@ -48,6 +48,7 @@ defmodule HipsterJesus.Mixfile do
     [
       name: :hipster_jesus,
       maintainers: ["Daniel Sandiego"],
+      licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/dnlsandiego/hipster_jesus"}
     ]
   end
